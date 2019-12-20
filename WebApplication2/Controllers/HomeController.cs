@@ -76,7 +76,7 @@ namespace WebApplication2.Controllers
             PrincipalContext context = new PrincipalContext
                                        (ContextType.Domain, "MBS", "OU=DevOU,DC=MBS,DC=com");
             UserPrincipal user = UserPrincipal.FindByIdentity
-                                 (context, IdentityType.SamAccountName, Samaccountname);
+                                 (context, IdentityType.SamAccountName, Samaccountname);   
             //Enable Account if it is disabled
             user.Enabled = true;
             //Reset User Password
