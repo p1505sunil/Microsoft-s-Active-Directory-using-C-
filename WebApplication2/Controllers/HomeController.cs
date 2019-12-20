@@ -90,7 +90,7 @@ namespace WebApplication2.Controllers
         }
 
         //if you want to get all Groups of Specific OU you have to add OU Name in Context 
-        public static List<Group> GetallGroups()
+        public static List<Group> GetallGroups() 
         {
             List<Group> AdGroups = new List<Group>();
             var ctx = new PrincipalContext(ContextType.Domain, "MBS", "OU=DevOU,DC=MBS,DC=com");
